@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     # Local
     "accounts.apps.AccountsConfig", # new
     "pages",
+    "articles",
 ]
 
 MIDDLEWARE = [
@@ -145,3 +146,4 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = "afonje@gmail.com"
 EMAIL_HOST_PASSWORD = env.str("EMAIL_SECRET_KEY")
 
+TIME_ZONE = "Europe/London"
